@@ -1,0 +1,18 @@
+{
+  "plugins": {
+    "posthtml-bem": {
+      "elemPrefix": "__",
+      "modPrefix": "_",
+      "modDlmtr": "--"
+    },
+    "posthtml-expressions": {
+      "locals": {
+        "foo": "bar"
+      }
+    },
+    "posthtml-include": {
+      "encoding": "utf-8",
+      "root": "./src/html"
+    }
+  }
+}
