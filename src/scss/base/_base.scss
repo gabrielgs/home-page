@@ -4,3 +4,22 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $icons-grey-1;
+}

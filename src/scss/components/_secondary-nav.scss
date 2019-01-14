@@ -1,0 +1,38 @@
+.secondary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $secondary-nav-boder-color;
+  padding: 0 167px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    border-right: 1px solid $secondary-nav-boder-color;
+
+    &:nth-child(1) {
+      border-left: 1px solid $secondary-nav-boder-color;
+    }
+
+    &--no-border {
+      border-right: none
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:hover .icon {
+      fill: $primary-color;
+    }
+  }
+}
