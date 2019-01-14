@@ -1,2 +1,9 @@
 @import '../../node_modules/normalize.css/normalize.css';
-@import './base/base'
+@import './variables';
+@import './base/base';
+@import './base/icons';
+@import './components/header';
+@import './components/container';
+@import './components/nav-container';
+@import './components/secondary-nav';
+@import './utils';
