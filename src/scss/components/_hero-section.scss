@@ -1,0 +1,59 @@
+.hero {
+  background-image: url("../assets/img/hero-image.jpg");
+
+  &-container{
+    flex-direction: column;
+    padding-top: 108px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    border: 5px solid;
+    color: $white;
+    font-size: 37px;
+    letter-spacing: 7px;
+    margin: 0;
+    padding: 23px 33px 28px;
+    text-transform: uppercase;
+    text-align: center;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: 65px 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+
+    div {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $primary-color;
+    }
+
+    span {
+      color: $text-hero-color;
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-left: 6px;
+    }
+
+    &:nth-child(1) {
+      margin-right: 60px;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}
