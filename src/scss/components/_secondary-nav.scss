@@ -1,8 +1,6 @@
 .secondary-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid $secondary-nav-boder-color;
+  padding: 0 167px;;
 
   &__list {
     display: flex;
