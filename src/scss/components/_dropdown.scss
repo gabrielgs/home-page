@@ -1,0 +1,56 @@
+.dropdown {
+  background: $white;
+  box-shadow: 0 8px 24px rgba(0,0,0,.13);
+  display: none;
+  padding: 40px;
+  position: absolute;
+  width: 120%;
+  right: 0;
+
+  p {
+    margin: 0 0 .5em;
+    line-height: 1.4;
+  }
+
+  .intro {
+    margin: 0 0 25px 30px;
+    color: #888888;
+  }
+
+  .subhead {
+    font-size: 14px;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+    margin: 0 1%;
+  }
+
+  &__link {
+    display: block;
+    border-radius: 3px;
+    border-left: 3px solid transparent;
+    padding: 15px 25px 10px;
+    margin-bottom: -5px;
+    transition: all .25s;
+    min-height: 90px;
+
+    &:hover {
+      background: #fafafa;
+      border-color: $primary-color;
+      box-shadow: 0 8px 24px rgba(0,0,0,.13);
+    }
+
+    .h3 {
+      color: $primary-color;
+    }
+  }
+}

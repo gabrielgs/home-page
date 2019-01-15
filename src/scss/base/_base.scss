@@ -9,6 +9,10 @@ body {
   font-size: 16px;
 }
 
+h3, .h3 {
+  font-size: 16px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -22,4 +26,12 @@ li {
 a {
   text-decoration: none;
   color: $icons-grey-1;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
 }
