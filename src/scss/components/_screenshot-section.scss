@@ -1,0 +1,15 @@
+.screenshot {
+  background: $bg-section-color;
+
+  &__container {
+    width: 659px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 45px;
+
+    img {
+      width: 100%;
+      box-shadow: 4px 12px 32px rgba($color: $text-black-1, $alpha: 0.5)
+    }
+  }
+}
