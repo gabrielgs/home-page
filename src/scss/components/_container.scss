@@ -2,4 +2,9 @@
   margin: 0 auto;
   padding: 0 8px;
   max-width: 962px;
+
+  &--md {
+    max-width: 805px;
+    margin: 0 auto;
+  }
 }

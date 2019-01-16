@@ -1,0 +1,26 @@
+.btn {
+  border: 1px solid;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 11px 24px;
+  transition: all .25s;
+
+  &-primary {
+    background: $primary-color;
+
+    &:hover {
+      // background: #4BB6C4;
+      background: #5AE0F2;
+    }
+  }
+
+  &-secondary {
+    background: $text-black-1;
+
+    &:hover {
+      background: #2E2E2E;
+    }
+  }
+}
