@@ -23,4 +23,10 @@
       background: #2E2E2E;
     }
   }
+
+  &-white {
+    border: none;
+    background: $white;
+    color: $text-black-1;
+  }
 }
