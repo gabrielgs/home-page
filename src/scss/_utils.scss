@@ -10,6 +10,17 @@
   justify-content: space-between;
 }
 
+.title {
+  color: $text-black-1;
+  margin: 0;
+}
+
+.paragraph {
+  color: $paragraph-color;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .no-padding {
   padding: 0;
 }
