@@ -13,6 +13,25 @@
 .title {
   color: $text-black-1;
   margin: 0;
+
+  &--white {
+    color: $white;
+  }
+
+  &--underline {
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      background: $primary-color;
+      height: 3px;
+      width: 3%;
+      position: absolute;
+      left: 49%;
+      top: 38px;
+    }
+  }
 }
 
 .paragraph {
