@@ -1,0 +1,97 @@
+.skills {
+  background: $bg-section-color;
+  padding: 70px 0;
+
+  &__container {
+    display: flex;
+    padding: 0 10px;
+  }
+
+  &-why {
+    width: 60%;
+    margin-right: 46px;
+
+    p {
+      color: $paragraph-color-2;
+      line-height: 1.5;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    &__items {
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .icon {
+        font-size: 20px;
+        color: $text-black-1;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &-list {
+    width: 40%;
+
+    li {
+      margin-bottom: 14px;
+
+      &:nth-child(1) .fill {
+        width: 60%;
+      }
+      &:nth-child(2) .fill {
+        width: 85%;
+      }
+      &:nth-child(3) .fill {
+        width: 75%;
+      }
+      &:nth-child(4) .fill {
+        width: 90%;
+      }
+      &:nth-child(5) .fill {
+        width: 80%;
+      }
+
+      &:nth-last-child(1) {
+        margin: 0;
+      }
+
+      .progressbar {
+        border-bottom: 1px solid $border-progress-bar;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+        .fill {
+          height: 9px;
+          background: $progress-bar-fill;
+          display: inline-block;
+        }
+
+        .percentage {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__title {
+    color: $text-black-1;
+    margin-top: 0;
+    margin-bottom: 29px;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+}
