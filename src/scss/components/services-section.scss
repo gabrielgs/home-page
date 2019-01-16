@@ -1,0 +1,70 @@
+.services {
+  padding-top: 93px;
+  padding-bottom: 67px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 41px 49px;
+    padding: 0 21px 63px 27px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+
+    .icon {
+      color: $icons-grey-2;
+      font-size: 40px;
+      margin-top: 15px;
+    }
+  }
+
+  &__info {
+    margin-left: 37px;
+
+    h3 {
+      color: $text-black-1;
+      margin: 0;
+    }
+
+    p, a {
+      font-size: 11px;
+    }
+
+    p {
+      color: $paragraph-color-2;
+      line-height: 20px;
+      margin: 17px 0;
+    }
+
+    a {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  &-copy {
+    color: $white;
+    background: $text-black-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 31px 29px;
+
+    h2 {
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin: 0 0 15px 0;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+}
