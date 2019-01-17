@@ -7,6 +7,12 @@
   padding: 11px 24px;
   transition: all .25s;
 
+  &--sm {
+    font-size: 13px;
+    padding: 7px 10px;
+    line-height: 1;
+  }
+
   &-primary {
     background: $primary-color;
 

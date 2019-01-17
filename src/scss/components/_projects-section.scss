@@ -1,0 +1,33 @@
+.projects {
+  text-align: center;
+  padding: 74px 0 58px;
+
+  .title {
+    line-height: 1;
+  }
+
+  &__buttons {
+    margin-top: 47px;
+  }
+
+  &__grid {
+    margin: 45px 0 53px;
+  }
+
+  .project {
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 3px;
+    }
+  }
+}
