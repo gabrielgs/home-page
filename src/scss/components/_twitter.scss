@@ -1,0 +1,28 @@
+.twitter {
+  text-align: center;
+  padding: 35px 0;
+  background: $primary-color;
+
+  .tweet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p, a, .icon {
+      color: $white;
+      font-weight: bold;
+    }
+
+    p {
+      margin-left: 6px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+  }
+}
