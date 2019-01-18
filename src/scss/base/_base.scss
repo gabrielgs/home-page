@@ -8,6 +8,7 @@ html {
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
 h3, .h3 {
@@ -29,7 +30,11 @@ a {
   color: $icons-grey-1;
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+figure {
   margin: 0;
 }
 
