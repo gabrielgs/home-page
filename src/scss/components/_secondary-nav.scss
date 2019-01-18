@@ -1,6 +1,12 @@
 .secondary-nav {
   border-bottom: 1px solid $secondary-nav-boder-color;
-  padding: 0 167px;;
+  padding: 0 167px;
+
+  &__contact {
+    .icon {
+      color: $primary-color;
+    }
+  }
 
   &__list {
     display: flex;
@@ -30,6 +36,10 @@
 
     &:hover .icon {
       fill: $primary-color;
+    }
+
+    span {
+      margin-left: 4px;
     }
   }
 }

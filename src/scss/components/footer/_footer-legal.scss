@@ -1,0 +1,40 @@
+.footer-legal {
+  background: $bg-footer-legal;
+  font-size: 12px;
+
+  .copyright, li, a {
+    line-height: 1;
+  }
+
+  .copyright, a {
+    color: $text-footer-legal;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+      a {
+        display: block;
+        padding: 21px 13px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .copyright, .site-nav {
+      width: 100%
+    }
+
+    .copyright {
+      margin-bottom: 21px;
+      order: 1;
+    }
+
+    .flex-content {
+      flex-wrap: wrap;
+    }
+  }
+}

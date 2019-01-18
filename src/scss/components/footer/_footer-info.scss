@@ -1,0 +1,110 @@
+.footer-info {
+  padding: 48px 0;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(201px, 1fr));
+    grid-gap: 40px;
+  }
+
+  p, h2, h3 {
+    color: $white;
+  }
+
+  h2, h3 {
+    line-height: 1;
+  }
+
+  h3 {
+    margin-bottom: 24px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    @media screen and (max-width: 457px) {
+      justify-content: center;
+    }
+
+    .icon {
+      color: $icons-footer-1;
+    }
+  }
+
+  &__content {
+    .icon {
+      font-size: 11px;
+    }
+
+    p {
+      margin-bottom: 22px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  &__twitter {
+    .twitter-feed {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      grid-gap: 9px;
+
+      &:nth-child(1) {
+        margin-bottom: 38px;
+      }
+
+      .icon {
+        color: $icons-footer-2;
+      }
+
+      span {
+        font-size: 12px;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__posts {
+    max-width: 204px;
+
+    @media screen and (max-width: 457px) {
+      max-width: none;
+    }
+
+    .posts__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+      grid-gap: 10px;
+    }
+  }
+
+  &__newsletter {
+    .newsletter__input {
+      background: #121214;
+      border: 1px solid $input-footer-border;
+      color: $white;
+      padding: 12px 0 12px 11px;
+      width: 100%;
+      margin: 13px 0 8px;
+
+      &::placeholder {
+        color: $input-footer-placeholder;
+      }
+    }
+
+    .btn {
+      float: right;
+
+      @media screen and (max-width: 457px){
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}

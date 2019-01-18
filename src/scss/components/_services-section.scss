@@ -4,9 +4,13 @@
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 41px 49px;
     padding: 0 21px 63px 27px;
+
+    @media screen and (min-width: 640px) {
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    }
   }
 
   &__item {
@@ -21,7 +25,7 @@
   }
 
   &__info {
-    margin-left: 37px;
+    margin-left: 21px;
 
     h3 {
       color: $text-black-1;
@@ -53,6 +57,11 @@
     line-height: 1;
     padding: 31px 29px;
 
+    @media screen and (max-width: 630px) {
+      text-align: center;
+      flex-direction: column;
+    }
+
     h2 {
       font-size: 18px;
       letter-spacing: 2px;
@@ -65,6 +74,10 @@
 
     p {
       font-size: 11px;
+
+      @media screen and (max-width:630px) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
