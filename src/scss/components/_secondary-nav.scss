@@ -2,6 +2,15 @@
   border-bottom: 1px solid $secondary-nav-boder-color;
   padding: 0 167px;
 
+  @media screen and (max-width: 1024px) {
+    padding: 0 87px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none !important;
+    padding: 0 17px;
+  }
+
   &__contact {
     .icon {
       color: $primary-color;

@@ -10,8 +10,15 @@
         <span>ROI UP Agency</span>
       </a>
     </li>
+    <li id="js-toggle-mobile-menu" class="toggle-mobile-menu">
+      <a href="#">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
+          <path d="M14.945,0 L2.445,0 C1.62,0 0.945,0.675 0.945,1.5 C0.945,2.325 1.62,3 2.445,3 L14.945,3 C15.77,3 16.445,2.325 16.445,1.5 C16.445,0.675 15.77,0 14.945,0 Z M14.945,5.5 L2.445,5.5 C1.62,5.5 0.945,6.175 0.945,7 C0.945,7.825 1.62,8.5 2.445,8.5 L14.945,8.5 C15.77,8.5 16.445,7.825 16.445,7 C16.445,6.175 15.77,5.5 14.945,5.5 Z M14.945,11 L2.445,11 C1.62,11 0.945,11.675 0.945,12.5 C0.945,13.325 1.62,14 2.445,14 L14.945,14 C15.77,14 16.445,13.325 16.445,12.5 C16.445,11.675 15.77,11 14.945,11 Z"/>
+        </svg>
+      </a>
+    </li>
   </ul>
-  <ul class="menu nav-items flex-content">
+  <ul id="js-main-nav" class="menu nav-items flex-content">
     <li>
       <a href="/" class="main-nav__link">HOME</a>
     </li>
@@ -28,11 +35,20 @@
       <a href="#" class="main-nav__link">BLOG</a>
     </li>
     <li class="has-dropdown">
-      <span class="main-nav__link">FEATURES</span>
+      <span id="js-open-dropdown" class="open-dropdown main-nav__link">FEATURES</span>
       <include src="html/components/header/dropdown.html"></include>
     </li>
     <li>
       <a href="#" class="main-nav__link">CONTACT</a>
+    </li>
+    <li class="only-show-mobile">
+      <a href="mailto:name@yoursite.com" class="main-nav__link">name@yoursite.com</a>
+    </li>
+    <li class="only-show-mobile">
+      <a href="tel:19003245467" class="main-nav__link">1-900-324-5467</a>
+    </li>
+    <li class="only-show-mobile">
+      <a href="#" class="main-nav__link">Login / Register</a>
     </li>
   </ul>
 </nav>
