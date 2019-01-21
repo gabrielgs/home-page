@@ -1,4 +1,6 @@
 {
+  "recognizeSelfClosing": true,
+  "lowerCaseAttributeName:" : false,
   "plugins": {
     "posthtml-bem": {
       "elemPrefix": "-",
