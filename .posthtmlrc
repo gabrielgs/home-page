@@ -15,6 +15,12 @@
     "posthtml-include": {
       "encoding": "utf-8",
       "root": "./src"
+    },
+    "posthtml-favicons": {
+      "outDir": "./dist",
+      "configuration": {
+        "path": "/"
+      }
     }
   }
 }
