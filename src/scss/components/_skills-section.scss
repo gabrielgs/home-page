@@ -72,19 +72,29 @@
       margin-bottom: 14px;
 
       &:nth-child(1) .fill {
-        width: 60%;
+        &.show {
+          width: 60%;
+        }
       }
       &:nth-child(2) .fill {
-        width: 85%;
+        &.show {
+          width: 85%;
+        }
       }
       &:nth-child(3) .fill {
-        width: 75%;
+        &.show {
+          width: 75%;
+        }
       }
       &:nth-child(4) .fill {
-        width: 90%;
+        &.show {
+          width: 90%;
+        }
       }
       &:nth-child(5) .fill {
-        width: 80%;
+        &.show {
+          width: 80%;
+        }
       }
 
       &:nth-last-child(1) {
@@ -101,6 +111,8 @@
           height: 9px;
           background: $progress-bar-fill;
           display: inline-block;
+          width: 0%;
+          transition: all 2s linear;
         }
 
         .percentage {
